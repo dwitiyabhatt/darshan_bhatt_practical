@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<com.darshan.darshanshop.utils.container_classes.SlidingLinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/lightest_bg"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/layout_common_toolbar"
+        android:id="@+id/common_toolbar"/>
+
+              <ImageView
+                  android:layout_width="@dimen/_80sdp"
+                  android:layout_height="@dimen/_80sdp"
+                  android:layout_marginTop="@dimen/_12sdp"
+                  android:id="@+id/ivProduct"
+                  android:src="@drawable/profile_place_holder"
+                  />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edProductName"
+        android:hint="@string/label_enter_product_name"
+        android:imeOptions="actionNext"
+        android:inputType="textPersonName"
+        android:maxLength="30"
+        style="@style/CommonEditText"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edPrice"
+        android:hint="@string/label_enter_product_price"
+        android:imeOptions="actionDone"
+        android:inputType="numberDecimal"
+        android:maxLength="7"
+        style="@style/CommonEditText"
+
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSubmit"
+        style="@style/CommonButton"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:text="@string/submit"
+        />
+</com.darshan.darshanshop.utils.container_classes.SlidingLinearLayout>
+</layout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.cardview.widget.CardView
+        style="@style/CommonCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_12sdp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvPrice"
+                android:text="Price : $126"
+                android:textSize="@dimen/_14sdp"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="@android:color/black"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDateTime"
+                tools:text="05 Oct 2012 12 :16 AM"
+                android:textColor="@color/text_dark_gray"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/montserrat_regular"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:id="@+id/tvSale"
+                android:text="@string/sale"
+                android:minWidth="@dimen/_60sdp"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_14sdp"
+                android:fontFamily="@font/montserrat_medium"
+                android:padding="@dimen/_12sdp"
+                android:background="@drawable/rounded_corners_blue_border"
+                android:foreground="?android:attr/selectableItemBackground"
+                />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.cardview.widget.CardView
+        style="@style/CommonCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        >
+
+        
+        <ImageView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:id="@+id/ivProfilePic"
+            android:src="@color/colorPrimaryDark"
+            />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivProfilePic"
+            android:text="@string/sold"
+            android:id="@+id/tvSold"
+            android:textColor="@android:color/holo_green_dark"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="@dimen/_15sdp"
+            android:layout_centerHorizontal="true"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/ivProfilePic"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvName"
+                tools:text="Product Name"
+                android:textColor="@android:color/black"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvPrice"
+                tools:text="Price : $129.55"
+                android:textColor="@color/text_dark_gray"
+                android:fontFamily="@font/montserrat_medium"
+                android:textSize="@dimen/_12sdp"
+                />
+
+
+        </LinearLayout>
+        
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/ivProfilePic"
+            android:id="@+id/ivView"
+            android:src="@drawable/ic_view_details"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_toStartOf="@+id/ivView"
+            android:layout_below="@+id/ivProfilePic"
+            android:id="@+id/ivEdit"
+            android:src="@drawable/ic_edit"
+            />
+
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

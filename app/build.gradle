@@ -1,0 +1,62 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.darshan.darshanshop"
+        minSdkVersion 23
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    dataBinding{
+        enabled  = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //Kotlin
+    implementation kotlinLibraries.kotlin
+
+    //Support
+    implementation supportLibraries.appCompat
+    implementation supportLibraries.cardView
+    implementation supportLibraries.recyclerView
+    implementation supportLibraries.material
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.2'
+
+    // Image processing
+    implementation 'com.github.bumptech.glide:glide:4.10.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.10.0'
+
+    // Designing
+    implementation 'com.intuit.sdp:sdp-android:1.0.4'
+
+
+    //ViewModel & LiveData
+    implementation archLibraries.lifecycle
+    kapt archLibraries.lifecycleCompiler
+
+    //Room + Coroutines
+    implementation archLibraries.roomCoroutines
+    kapt archLibraries.roomCompiler
+
+    testImplementation testLibraries.junit
+    androidTestImplementation testLibraries.testRunner
+    androidTestImplementation testLibraries.espresso
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    >
+<com.darshan.darshanshop.utils.container_classes.SlidingRelativeLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightest_bg">
+
+    <include layout="@layout/layout_common_toolbar" android:id="@+id/common_toolbar"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/common_toolbar"
+        android:id="@+id/rvBidList"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvNoData"
+        android:text="@string/no_data_found"
+        android:textSize="@dimen/_25sdp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+
+
+</com.darshan.darshanshop.utils.container_classes.SlidingRelativeLayout>
+</layout>

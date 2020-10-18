@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Darshan Shop</string>
+    <string name="no_data_found">No data found</string>
+    <string name="shopping_items">Shopping Items</string>
+    <string name="submit">Submit</string>
+    <string name="logout_confirm">Are you sure you want to logout?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="place_bid">Place Bid</string>
+    <string name="enter_bid_amount">Enter Bid Amount</string>
+    <string name="msg_select_product_image">Please select product image</string>
+    <string name="msg_enter_product_name">Please enter product name</string>
+    <string name="msg_enter_product_price">Please enter product price</string>
+    <string name="msg_enter_user_name">Please enter user name</string>
+    <string name="msg_enter_password">Please enter password</string>
+    <string name="msg_permission_denied">Permission Denied</string>
+    <string name="msg_permission_from_settings">Permission is denied, Please allow permissions from App Settings.</string>
+    <string name="title_app_settings">App Settings</string>
+    <string name="msg_allow_permission">Please allow request permission</string>
+    <string name="label_enter_product_price">Enter product price</string>
+    <string name="label_enter_product_name">Enter product name</string>
+    <string name="login">Login</string>
+    <string name="label_username">Username</string>
+    <string name="title_welcome_admin">Welcome Admin!</string>
+    <string name="title_welcom_user">Welcome User!</string>
+    <string name="title_update_item">Update Product</string>
+    <string name="title_add_item">Add Product</string>
+    <string name="sold">Sold</string>
+    <string name="sale">Sale</string>
+    <string name="msg_sell_item_confirmation">Are you sure you want to sell this item?</string>
+    <string name="title_bidding_list">Bidding List</string>
+    <string name="msg_product_sold">This product has already been sold</string>
+</resources>

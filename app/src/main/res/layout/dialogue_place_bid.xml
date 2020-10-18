@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:padding="@dimen/_12sdp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_12sdp"
+        android:id="@+id/edBidAMount"
+        android:maxLines="1"
+        android:maxLength="20"
+        android:background="@drawable/rounded_corners_white_bg"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:inputType="numberDecimal"
+        android:imeOptions="actionDone"
+        android:hint="@string/enter_bid_amount"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDone"
+        android:layout_gravity="end"
+        android:textSize="@dimen/_16sdp"
+        android:padding="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:text="@string/place_bid"
+        android:background="@drawable/rounded_corners_white_bg"
+        android:textColor="@color/colorPrimary"/>
+</LinearLayout>
+</layout>
